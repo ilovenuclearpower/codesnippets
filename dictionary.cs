@@ -29,7 +29,7 @@ class Program
         //You could add:
         /* for each(var thing in dictionary2)
         {
-        Console.WriteLine(thing.key + " " + thing.value);
+        Console.WriteLine(thing.key + " " + thing.value); //You can't expect a dictionary to be ordered in any specific way.
         } */
     }
 }
