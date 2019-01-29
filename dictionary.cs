@@ -23,10 +23,14 @@ class Program
             { "llama", 0},
             { "iguana", -1}
         };
-        //Ideally this would be a one-liner. 
         // This dictionary has 4 pairs too.
         Console.WriteLine("DICTIONARY 2: " + dictionary2.Count);
         //Writes out the size of the second dictionary.
+        //You could add:
+        /* for each(var thing in dictionary2)
+        {
+        Console.WriteLine(thing.key + " " + thing.value);
+        } */
     }
 }
 // Taken from DotNetPerls: https://www.dotnetperls.com/dictionary
