@@ -1,3 +1,3 @@
 # codesnippets
 
-A collection of various repos commented by myself. Attribution is given in the topline comment of the source file.
+A collection of various repos commented by myself. Attribution is given in the bottom comment of the source file.
