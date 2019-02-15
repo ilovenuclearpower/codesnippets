@@ -18,7 +18,7 @@ public class ThreeStacksWithArray
     }
     public void Push(int stack, int value)
     {   //Checks for bad values, there is probably a better way to do this.
-        if(stack <= 3)
+        if(stack >= 3)
         {
             throw new ArgumentOutOfRangeException("stack out of bounds");
         }
