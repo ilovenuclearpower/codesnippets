@@ -1,0 +1,83 @@
+using System;
+using System.Collections.Generic;
+// To execute C#, please define "static void Main" on a class
+// named Solution.
+
+//Given a string s, that contains only 4 different characters ('A', 'B', 'C', 'D'), return the length of the smallest substring that contains at least one of all 4 unique charcters.
+
+//"ACBAADBADCD" length = 4
+
+//"C[ACCBD]BBAACCD" length = 5
+
+// "AAA" -1
+// Minimum Size of a Valid Substring = 4.
+// Location Substring = Unk.
+//  (n -4)
+// ABBBACC]CADDD
+class Solution
+{
+    static void Main(string[] args)
+    {
+        string input = "AAAAAAAAAAABBBCCCDDDAAAAA";
+        Console.WriteLine(LengthOfValidSubString(input));
+    }
+    
+    public static int LengthOfValidSubString(string s)
+    {
+     Dictionary<char, int> numberofChars = new Dictionary<char, int>() { 
+         { 'A', 0 }, 
+         { 'B', 0 },
+         { 'C', 0 },
+         { 'D', 0 } 
+     };
+     
+     char[] inputArray = new char[s.Length];
+     inputArray = s.ToCharArray();
+     int pointer1 = 0;
+     int pointer2 = 3;
+     int windowSize = pointer2 - pointer1 +1;
+     
+    int bestSeen = Int32.MaxValue;
+        
+    for (var i = pointer1; i <= pointer2; i++)
+    {
+        numberofChars[inputArray[i]]++;
+    }
+        
+    while (pointer2 < inputArray.Length - 1)
+    {
+        Console.WriteLine(pointer2 + " " + pointer1);
+        if((windowSize == 4) && (!numberofChars.ContainsValue(0)))
+        {
+            return 4;
+        }
+        while ((windowSize > 4) && (numberofChars[inputArray[pointer1]] > 1))
+        {
+            numberofChars[inputArray[pointer1]]--;
+            pointer1++;
+            windowSize--;
+        }
+        
+        while (numberofChars.ContainsValue(0))
+        {
+            pointer2++;
+            numberofChars[inputArray[pointer2]]++;
+            windowSize++;
+        }
+        bestSeen = Math.Min(bestSeen, windowSize);
+        
+    }
+        
+    if (bestSeen < Int32.MaxValue)
+    {
+        return bestSeen;
+    }
+    else
+    {
+        return -1;
+    }
+    
+    
+}
+}
+
