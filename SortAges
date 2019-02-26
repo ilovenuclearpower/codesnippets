@@ -11,7 +11,7 @@ class Solution
     static ReadOnlySpan<Person> SortByAge(Person[] input)
     {
         var output = new Person[input.Length];
-        
+        //Creates an array containing the number of people at every age.
         var ages = new int[150];
         for (int i = 0; i < input.Length; i++)
         {
@@ -34,6 +34,9 @@ class Solution
         
         int counter = 0;
         Person personHeld = input[0];
+        //Groups each age into a "bucket" by finding the start index of every age (startindex = previous startindex
+        // + previous number of ages. As you iterate through, this determines the number of indices each age needs and their
+        //relative location
         
         int[] startIndexes = new int[ages.Length];
         int offSetCounter = 0;
@@ -43,6 +46,9 @@ class Solution
             offSetCounter += ages[i];
         }
         
+        //The meat of the algorithm, determines the location of the person by their age and the startindex and number
+        // of ages table. Picks up the person at that location, then drops the held person in the same location.
+        //Runtime O(n)
         while (counter < input.Length)
         {
             int ageOffSet = ages[personHeld.Age] -1;
@@ -53,13 +59,14 @@ class Solution
             counter++;
         }
         
-        //Deals with the end of the loop edge cases
+        //Deals with the end of the loop edge case (we haven't dropped the last person yet)
         int endAgeOffSet = ages[personHeld.Age] -1;
         input[startIndexes[personHeld.Age + ageOffSet]] = personHeld;
         
         return new ReadOnlySpan<Person>(input);
     }
     
+    //Driver function for testing.
     static void Main(string[] args)
     {
         var people = new List<Person> {
@@ -79,10 +86,12 @@ class Solution
         // (imagine people get populated here)
         
         var sortedPeople = SortByAge(people.ToArray());
-        
+        //Output function.
         foreach (Person p in sortedPeople)
         {
             Console.WriteLine(p.Age);
         }
     }
 }
+//Sorts an array of People by their age. Written by Connor Matza for a mock interview w/ Blizzard
+//Written by Connor Alexander Matza for a mock interview with a Blizzard Senior
