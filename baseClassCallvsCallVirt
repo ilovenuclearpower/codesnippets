@@ -7,8 +7,12 @@ internal class SomeClass {
 
       // If the compiler were to use 'callvirt' instead of 'call', this
       // method would call itself recursively until the stack overflowed.
+      // This is because at runtime, callvirt would look for the base class
+      // then see the override.
+      // The "call" instruction explicitly ignores polymorphism
+      // and will just call the overridden method directly.
       return base.ToString();
    }
 }
 
-Richter, Jeffrey. CLR via C# (Developer Reference) . Pearson Education. Kindle Edition. 
+//Richter, Jeffrey. CLR via C# (Developer Reference) . Pearson Education. Kindle Edition. 
