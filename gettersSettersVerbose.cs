@@ -11,7 +11,7 @@ public sealed class Employee {
 //When you use the property - you do not need to be concerned with whether you are using the getter or setter
 // Employee A = new Employee();
 // A.Name = "stringString"; works just fine!
-// Console.WriteLine(A.Name) also works just fine!
+// Console.WriteLine(A.Name); also works just fine!
 // This is because the C# compiler is written
 // in such a way as to overload the . and = operators
 // to automatically call the correct methods in the Employee class.
