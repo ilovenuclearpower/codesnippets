@@ -16,7 +16,8 @@ public sealed class Employee {
 // in such a way as to overload the . and = operators
 // to automatically call the correct methods in the Employee class.
 // However, if you set the property to private - you may/may not be able to
-// invoke these methods as expected, and the compiler will throw an error
+// invoke these methods as expected, and the compiler will throw an error if you're trying
+// to access a property that your method doesn't have access to.
    public Int32 Age {
       get { return(m_Age); }
       set {
