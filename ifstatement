@@ -11,7 +11,7 @@ class Program
         } /*Potential improvement */
         else if(SomeOtherCondition)
         {
-        DoSomethingElse(); /*Calls the DoSomethingElse() arbitrary method if the SomeOtherCondition arbitrary condition is met.
+        /*DoSomethingElse(); Calls the DoSomethingElse() arbitrary method if the SomeOtherCondition arbitrary condition is met.
         won't execute if the first if condition is true.*/
         }
         
