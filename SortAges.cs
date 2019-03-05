@@ -60,6 +60,7 @@ class Solution
         }
         
         //Deals with the end of the loop edge case (we haven't dropped the last person yet)
+        //This portion is not tested - if it doesn't compile comment it out.
         int endAgeOffSet = ages[personHeld.Age] -1;
         input[startIndexes[personHeld.Age + ageOffSet]] = personHeld;
         
