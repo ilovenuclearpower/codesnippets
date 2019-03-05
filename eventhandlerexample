@@ -31,3 +31,5 @@ public class Program
 }
 
 //Taken from - David Klock (Skype Session)
+//David wrote this out as an example of how delegates and eventhandling worked in C#.
+//As a part of a tutoring session.
