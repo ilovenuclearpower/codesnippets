@@ -47,7 +47,7 @@ public class Example
 
 //Taken from .NET Math.Pow() documentation. https://docs.microsoft.com/en-us/dotnet/api/system.math.pow?view=netframework-4.7.2
 //But what if we wanted to raise an *array* of numbers you could do
-
+/*
 int value = 2;
 int power = 5 //this is another arbitrary value
 int[] nums = new int[5]; //you can use an arbitrary value here
@@ -56,3 +56,4 @@ for(ii = 0; ii < nums.Length; ii++)
 {
 double[ii] = Math.Pow(int[ii], power); //implicit casting takes care of the int-> double conversion.
 }
+*/
