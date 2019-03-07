@@ -61,4 +61,3 @@ public sealed class Program {
    }
 }
 
-Richter, Jeffrey. CLR via C# (Developer Reference) . Pearson Education. Kindle Edition. 
