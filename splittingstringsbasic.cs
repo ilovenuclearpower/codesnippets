@@ -21,3 +21,5 @@ WORD: is
 WORD: a
 WORD: cat
 */
+
+//Taken from: https://www.dotnetperls.com/split
