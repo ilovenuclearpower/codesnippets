@@ -1,0 +1,21 @@
+    I present to you my final Programming Portfolio. Contained are 52 example programs (and one duplicate-in-concept). In the spirit
+  of keeping the entire library on git, this was edited in the default github text editor in a .txt format instead of in a richer
+  text format the supports things like highlighting, justification, headings, et cetera. Thus, you should be able to read this file
+  correctly regardless of the type of editor you are using to read it. 
+  
+    I made this compilation (pardon the pun) of program files by scouring the web for examples of interesting topics, writing my own solutions
+  to various leetcode problems, and pulling from the texts of CLR Via C#. Some of the examples were written for mock interviews with seniors
+  from Microsoft (and a lone Googler!) - those are complete and finished programs that already have a "driver" function included. Leetcode
+  solutions are complete programs, but would need a "driver" function to do anything (Leetcode provides this feature to you as a user for their
+  own testing purposes), however every "Leetcode" solution will in fact pass every testcase Leetcode throws at it. Their testing system typically
+  includes at least 10 but usually on the order of 100-1000 testcases, far more than I could ever hope to write myself testing manually. The Snippets
+  (from books and external websites) may or may not compile and do something - some of them are merely meant as examples of a theme, and some of them
+  are even there to show compile-time exception errors! Particularly the examples from CLR via C#  and sanfoundry will tend to compile, whereas
+  the examples from MSDN docs and dot-net-perls will not. 
+
+    I believe that I deserve an A because this portfolio goes above and beyond the standards that you set out in class for this work.I hope you agree
+  and I am willing to explain the choice of each individual snippet (even the duplicate swap programs are different enough they're defensible).
+  
+  Thank you and I hope you have a fantastic break,
+  
+    Connor Alexander Matza
