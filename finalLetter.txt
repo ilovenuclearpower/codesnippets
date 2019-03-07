@@ -12,9 +12,18 @@
   (from books and external websites) may or may not compile and do something - some of them are merely meant as examples of a theme, and some of them
   are even there to show compile-time exception errors! Particularly the examples from CLR via C#  and sanfoundry will tend to compile, whereas
   the examples from MSDN docs and dot-net-perls will not. 
+  
+    These programs and samples cover a wide range of basic to advanced topics from basic algorithms and data structures (leetcode solutions - runtime analsysis)
+  to the under-the-hood implementation of the CLR and C# compiler - anonymous types, delegates, even some more advanced topics like websockets.
+  Unfortunately, an example of deep and shallow copying was not included but I am pretty sure that this portfolio at least strikes a glancing
+  blow on most concepts in the C# language and programming as a discipline.
+  
+    I feel that every program, snippet, example, book excerpt has shown a deep and thorough understanding of the essentials of programming
+  in both general C# programming and in algorithms and data structures - as well as an ability to write programs in a simulated real world environment
+  during mock interviews. 
 
     I believe that I deserve an A because this portfolio goes above and beyond the standards that you set out in class for this work.I hope you agree
-  and I am willing to explain the choice of each individual snippet (even the duplicate swap programs are different enough they're defensible).
+  and I am willing to explain the choice of each individual snippet (even the duplicate swap programs are different enough they're defensible!).
   
   Thank you and I hope you have a fantastic break,
   
